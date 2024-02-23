@@ -27,13 +27,12 @@
   <title>AudioSet Ontology - Tree visualization</title>
 </head>
 <body>
-<a href="https://github.com/jordipons/AudioSetOntologyTree"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
 	<center>
-	<i><font face="sans-serif" color="gray">Expandable nodes have its name category in the left.</font></i>
+	<i><font face="sans-serif" color="gray">Expandable nodes have their name category in the left.</font></i>
 	<br>
-	<font face="sans-serif" color="gray"><i>Color code:</i></font> &nbsp;&nbsp;&nbsp; <font face="sans-serif" color="yellow"><strong>abstract</strong></font> -
-	<font face="sans-serif" color="orange"><strong>both</strong></font> - 
-	<font face="sans-serif" color="red"><strong>blacklist</strong></font>
+	<font face="sans-serif" color="green"><strong>Helpful to Customers</strong></font> -
+	<font face="sans-serif" color="orange"><strong>Maybe Helpful</strong></font> -
+	<font face="sans-serif" color="red"><strong>Not Helpful</strong></font>
 	</center>
 
 <script src="./d3.v3.min.js"></script> 
@@ -118,8 +117,9 @@ function update(source) {
   nodeUpdate.select("circle")
       .attr("r", 4.5)
       .style("fill", function(d) { if ("abstract,blacklist"==d.mark) {return "orange";}
-				   else if ("abstract"==d.mark) {return "yellow";}
-				   else if ("blacklist"==d.mark) {return "red";}
+				   else if ("helpful"==d.mark) {return "green";}
+				   else if ("unhelpful"==d.mark) {return "red";}
+				   else if ("maybe" == d.mark) {return "orange"}
 				   else {return "#fff";} } );
 
   nodeUpdate.select("text")
@@ -133,9 +133,10 @@ function update(source) {
 
   nodeExit.select("circle")
       .attr("r", 1e-6)
-      .style("fill", function(d) { if ("abstract,blacklist"==d.mark) {return "orange";}
-				   else if ("abstract"==d.mark) {return "yellow";}
-				   else if ("blacklist"==d.mark) {return "red";}
+      .style("fill", function(d) { if ("abstract,blacklist"==d.mark) {return "green";}
+				   else if ("helpful"==d.mark) {return "green";}
+				   else if ("unhelpful"==d.mark) {return "red";}
+				   else if ("maybe" == d.mark) {return "orange"}
 				   else {return "#fff";} } );
 
   nodeExit.select("text")
