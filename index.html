@@ -27,17 +27,39 @@
   <title>Teradyne Toolset Ontology - Tree visualization</title>
 </head>
 <body>
-	<center>
+	<div style="text-align: center;">
 	<i><font face="sans-serif" color="gray">Expandable nodes have their name category in the left.</font></i>
 	<br>
-	<font face="sans-serif" color="green"><strong>Helpful to Customers</strong></font> -
-	<font face="sans-serif" color="orange"><strong>Maybe Helpful</strong></font> -
-	<font face="sans-serif" color="red"><strong>Not Helpful</strong></font>
-	</center>
+	<span style="font-family: sans-serif; color: green; "><strong>Helpful to Customers</strong></span> -
+	<span style="font-family: sans-serif; color: orange; "><strong>Maybe Helpful</strong></span> -
+	<span style="font-family: sans-serif; color: red; "><strong>Not Helpful</strong></span>
+	</div>
 
 <script src="./d3.v3.min.js"></script> 
 <script>
-
+function wrap(text, width) {
+  text.each(function() {
+    var text = d3.select(this),
+        words = text.text().split(/\s+/).reverse(),
+        word,
+        line = [],
+        lineNumber = 0,
+        lineHeight = 1.1, // ems
+        y = text.attr("y"),
+        dy = parseFloat(text.attr("dy")),
+        tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em");
+    while (word = words.pop()) {
+      line.push(word);
+      tspan.text(line.join(" "));
+      if (tspan.node().getComputedTextLength() > width) {
+        line.pop();
+        tspan.text(line.join(" "));
+        line = [word];
+        tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
+      }
+    }
+  });
+}
 var margin = {top: 10, right: 10, bottom: 10, left: 60},
     width = 1560 - margin.right - margin.left,
     height = 800 - margin.top - margin.bottom;
@@ -106,8 +128,10 @@ function update(source) {
       .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
       .attr("dy", ".35em")
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
+	  .attr("class", "node-text")
       .text(function(d) { return d.name; })
-      .style("fill-opacity", 1e-6);
+      .style("fill-opacity", 1e-6)
+      .call(wrap, 200);
 
   // Transition nodes to their new position.
   var nodeUpdate = node.transition()
@@ -177,8 +201,22 @@ function update(source) {
 
 // Toggle children on click.
 function click(d) {
+  if (d.description) {
+	  if(d.clicked === "false") {
+		d3.select(this).select('text')
+      		.text(d.description)
+      		.call(wrap, 200);
+		  d.clicked = "true"
+	  } else {
+		  d3.select(this).select('text')
+      		.text(d.name)
+      		.call(wrap, 200);
+		  d.clicked = "false"
+	  }
+  }
   if (d.children) {
     d._children = d.children;
+	d._children.forEach((node) => node.clicked = "false")
     d.children = null;
   } else {
     d.children = d._children;
