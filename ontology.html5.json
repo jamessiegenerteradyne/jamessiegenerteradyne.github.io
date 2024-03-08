@@ -8,10 +8,7 @@
           "name": "Tester Utilities",
           "children": [
             {
-              "name": "Remote Terminal Service Monitor",
-              "mark": "unhelpful",
-              "description": "To ensure that the description is displayed immediately after the node is clicked, you need to update the node's text element with the new description before calling the update function. Here's the modified click function that updates the node's text immediately:",
-              "clicked": "false"
+              "name": "Remote Terminal Service Monitor"
             },
             {
               "name": "TDR"
@@ -22,64 +19,49 @@
           "name": "Program Development",
           "children": [
             {
-              "name": "IG-Clean",
-              "mark": "maybe"
+              "name": "IG-Clean"
             },
             {
-              "name": "IG-Flow",
-              "mark": "maybe"
+              "name": "IG-Flow"
             },
             {
-              "name": "UltraEdit",
-              "mark": "maybe"
+              "name": "UltraEdit"
             },
             {
-              "name": "Tortoise SVN",
-              "mark": "unhelpful"
+              "name": "Tortoise SVN"
             },
             {
-              "name": "IG-SIM",
-              "mark": "unhelpful"
+              "name": "IG-SIM"
             },
             {
-              "name": "Git",
-              "mark": "helpful"
+              "name": "Git"
             },
             {
-              "name": "IG-Assume",
-              "mark": "helpful"
+              "name": "IG-Assume"
             },
             {
-              "name": "IG-Benchmark",
-              "mark": "helpful"
+              "name": "IG-Benchmark"
             },
             {
-              "name": "IG-Data",
-              "mark": "helpful"
+              "name": "IG-Data"
             },
             {
-              "name": "IG-Diff",
-              "mark": "helpful"
+              "name": "IG-Diff"
             },
             {
-              "name": "IG-Link",
-              "mark": "helpful"
+              "name": "IG-Link"
             },
             {
-              "name": "IG-Logger",
-              "mark": "helpful"
+              "name": "IG-Logger"
             },
             {
-              "name": "IG-Review",
-              "mark": "helpful"
+              "name": "IG-Review"
             },
             {
-              "name": "IG-Secure",
-              "mark": "helpful"
+              "name": "IG-Secure"
             },
             {
-              "name": "Portbridge",
-              "mark": "helpful"
+              "name": "Portbridge"
             },
             {
               "name": "IG-MathCoder"
@@ -93,24 +75,19 @@
           "name": "Production",
           "children": [
             {
-              "name": "TIC - Fleet Management",
-              "mark": "maybe"
+              "name": "TIC - Fleet Management"
             },
             {
-              "name": "DIB Health",
-              "mark": "maybe"
+              "name": "DIB Health"
             },
             {
-              "name": "FD Engine",
-              "mark": "maybe"
+              "name": "FD Engine"
             },
             {
-              "name": "IP Asset Tracker",
-              "mark": "unhelpful"
+              "name": "IP Asset Tracker"
             },
             {
-              "name": "TSK Prober Interactive Control Tool",
-              "mark": "unhelpful"
+              "name": "TSK Prober Interactive Control Tool"
             }
           ]
         },
@@ -118,12 +95,10 @@
           "name": "Pattern Processing",
           "children": [
             {
-              "name": "ATP Pin Expander",
-              "mark": "unhelpful"
+              "name": "ATP Pin Expander"
             },
             {
-              "name": "Test Insight Tools",
-              "mark": "helpful"
+              "name": "Test Insight Tools"
             },
             {
               "name": "TIU_I2C"
@@ -134,28 +109,22 @@
           "name": "Online Debug",
           "children": [
             {
-              "name": "DIB Diagnostics",
-              "mark": "helpful"
+              "name": "DIB Diagnostics"
             },
             {
-              "name": "Remote Connectivity Matrix",
-              "mark": "helpful"
+              "name": "Remote Connectivity Matrix"
             },
             {
-              "name": "Teradyne Results Viewer",
-              "mark": "helpful"
+              "name": "Teradyne Results Viewer"
             },
             {
-              "name": "Virtual Scope",
-              "mark": "helpful"
+              "name": "Virtual Scope"
             },
             {
-              "name": "Wait Adjust",
-              "mark": "helpful"
+              "name": "Wait Adjust"
             },
             {
-              "name": "Timelines",
-              "mark": "helpful"
+              "name": "Timelines"
             },
             {
               "name": "Pattern QA Tool"
@@ -166,12 +135,10 @@
           "name": "DIB Definition",
           "children": [
             {
-              "name": "DIB Definition",
-              "mark": "helpful"
+              "name": "DIB Definition"
             },
             {
-              "name": "Proto-Strips",
-              "mark": "helpful"
+              "name": "Proto-Strips"
             }
           ]
         },
@@ -179,12 +146,10 @@
           "name": "Correlation",
           "children": [
             {
-              "name": "STDF Repair",
-              "mark": "maybe"
+              "name": "STDF Repair"
             },
             {
-              "name": "Examinator",
-              "mark": "No"
+              "name": "Examinator"
             }
           ]
         }
@@ -197,8 +162,7 @@
           "name": "Data Analysis",
           "children": [
             {
-              "name": "STDF Viewer Tool",
-              "mark": "maybe"
+              "name": "STDF Viewer Tool"
             },
             {
               "name": "SHM Detect Tool"
@@ -246,8 +210,7 @@
           "name": "Tester Utilities",
           "children": [
             {
-              "name": "Remote Terminal Service Monitor",
-              "mark": "unhelpful"
+              "name": "Remote Terminal Service Monitor"
             }
           ]
         },
@@ -255,12 +218,10 @@
           "name": "Production",
           "children": [
             {
-              "name": "IP Asset Tracker",
-              "mark": "unhelpful"
+              "name": "IP Asset Tracker"
             },
             {
-              "name": "TSK Prober Interactive Control Tool",
-              "mark": "unhelpful"
+              "name": "TSK Prober Interactive Control Tool"
             }
           ]
         },
@@ -304,12 +265,10 @@
               "name": "Advantest 93k ST8 Converter"
             },
             {
-              "name": "J750HD_UFplusPatternConverter",
-              "mark": "helpful"
+              "name": "J750HD_UFplusPatternConverter"
             },
             {
-              "name": "J750HDtoUFplusConverter",
-              "mark": "helpful"
+              "name": "J750HDtoUFplusConverter"
             }
           ]
         }
@@ -322,12 +281,10 @@
           "name": "Tester Utilities",
           "children": [
             {
-              "name": "Remote Terminal Service Monitor",
-              "mark": "unhelpful"
+              "name": "Remote Terminal Service Monitor"
             },
             {
-              "name": "Tester Config Read",
-              "mark": "maybe"
+              "name": "Tester Config Read"
             },
             {
               "name": "ACDCSpecMergeTool"
@@ -349,8 +306,7 @@
           "name": "Program Debug",
           "children": [
             {
-              "name": "Spike Check Automation",
-              "mark": "helpful"
+              "name": "Spike Check Automation"
             },
             {
               "name": "Control Benchmark Instruments"
@@ -472,8 +428,7 @@
           "name": "Data Analysis",
           "children": [
             {
-              "name": "STDF Viewer Tool",
-              "mark": "maybe"
+              "name": "STDF Viewer Tool"
             },
             {
               "name": "SHM Detect Tool"
@@ -519,12 +474,10 @@
               "name": "IG-XL Read Config Code for Test Programs"
             },
             {
-              "name": "IP Asset Tracker",
-              "mark": "unhelpful"
+              "name": "IP Asset Tracker"
             },
             {
-              "name": "TSK Prober Interactive Control Tool",
-              "mark": "unhelpful"
+              "name": "TSK Prober Interactive Control Tool"
             }
           ]
         }
@@ -553,8 +506,7 @@
           "name": "Data Analysis",
           "children": [
             {
-              "name": "STDF Viewer Tool",
-              "mark": "maybe"
+              "name": "STDF Viewer Tool"
             }
           ]
         },
@@ -562,12 +514,10 @@
           "name": "Production",
           "children": [
             {
-              "name": "IP Asset Tracker",
-              "mark": "unhelpful"
+              "name": "IP Asset Tracker"
             },
             {
-              "name": "TSK Prober Interactive Control Tool",
-              "mark": "unhelpful"
+              "name": "TSK Prober Interactive Control Tool"
             }
           ]
         },
@@ -575,8 +525,7 @@
           "name": "Tester Utilities",
           "children": [
             {
-              "name": "Remote Terminal Service Monitor",
-              "mark": "unhelpful"
+              "name": "Remote Terminal Service Monitor"
             }
           ]
         },
@@ -597,8 +546,7 @@
           "name": "Data Analysis",
           "children": [
             {
-              "name": "STDF Viewer Tool",
-              "mark": "maybe"
+              "name": "STDF Viewer Tool"
             }
           ]
         },
@@ -620,12 +568,10 @@
           "name": "Production",
           "children": [
             {
-              "name": "IP Asset Tracker",
-              "mark": "unhelpful"
+              "name": "IP Asset Tracker"
             },
             {
-              "name": "TSK Prober Interactive Control Tool",
-              "mark": "unhelpful"
+              "name": "TSK Prober Interactive Control Tool"
             }
           ]
         },
@@ -633,8 +579,7 @@
           "name": "Tester Utilities",
           "children": [
             {
-              "name": "Remote Terminal Service Monitor",
-              "mark": "unhelpful"
+              "name": "Remote Terminal Service Monitor"
             }
           ]
         },
@@ -655,12 +600,10 @@
           "name": "Tester Utilities",
           "children": [
             {
-              "name": "Remote Terminal Service Monitor",
-              "mark": "unhelpful"
+              "name": "Remote Terminal Service Monitor"
             },
             {
-              "name": "Tester Config Read",
-              "mark": "maybe"
+              "name": "Tester Config Read"
             },
             {
               "name": "TimeSet Merge Tool"
@@ -671,8 +614,7 @@
           "name": "Program Debug",
           "children": [
             {
-              "name": "Spike Check Automation",
-              "mark": "helpful"
+              "name": "Spike Check Automation"
             }
           ]
         },
@@ -680,12 +622,10 @@
           "name": "Production",
           "children": [
             {
-              "name": "IP Asset Tracker",
-              "mark": "unhelpful"
+              "name": "IP Asset Tracker"
             },
             {
-              "name": "TSK Prober Interactive Control Tool",
-              "mark": "unhelpful"
+              "name": "TSK Prober Interactive Control Tool"
             }
           ]
         }
@@ -698,8 +638,7 @@
           "name": "Data Analysis",
           "children": [
             {
-              "name": "STDF Viewer Tool",
-              "mark": "maybe"
+              "name": "STDF Viewer Tool"
             }
           ]
         },
@@ -707,12 +646,10 @@
           "name": "Production",
           "children": [
             {
-              "name": "IP Asset Tracker",
-              "mark": "unhelpful"
+              "name": "IP Asset Tracker"
             },
             {
-              "name": "TSK Prober Interactive Control Tool",
-              "mark": "unhelpful"
+              "name": "TSK Prober Interactive Control Tool"
             }
           ]
         },
@@ -720,8 +657,7 @@
           "name": "Tester Utilities",
           "children": [
             {
-              "name": "Remote Terminal Service Monitor",
-              "mark": "unhelpful"
+              "name": "Remote Terminal Service Monitor"
             }
           ]
         }
@@ -734,8 +670,7 @@
           "name": "Data Analysis",
           "children": [
             {
-              "name": "STDF Viewer Tool",
-              "mark": "maybe"
+              "name": "STDF Viewer Tool"
             }
           ]
         },
@@ -743,12 +678,10 @@
           "name": "Production",
           "children": [
             {
-              "name": "IP Asset Tracker",
-              "mark": "unhelpful"
+              "name": "IP Asset Tracker"
             },
             {
-              "name": "TSK Prober Interactive Control Tool",
-              "mark": "unhelpful"
+              "name": "TSK Prober Interactive Control Tool"
             }
           ]
         },
@@ -756,8 +689,7 @@
           "name": "Tester Utilities",
           "children": [
             {
-              "name": "Remote Terminal Service Monitor",
-              "mark": "unhelpful"
+              "name": "Remote Terminal Service Monitor"
             }
           ]
         }
